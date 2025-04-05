@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRC - Deep Techno DJ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #0d0d0d;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        letter-spacing: 2px;
+      }
+
+      .lang-toggle {
+        margin-top: 1rem;
+      }
+
+      .lang-toggle button {
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 0.95rem;
+      }
+
+      .lang-toggle button:hover {
+        background-color: #fff;
+        color: #0d0d0d;
+      }
+
+      .profile-pic {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        object-fit: cover;
+        margin-bottom: 2rem;
+        border: 2px solid #fff;
+      }
+
+      .bio {
+        max-width: 600px;
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+      }
+
+      .social {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1.5rem;
+        font-size: 1.8rem;
+      }
+
+      .social a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .social a:hover {
+        color: #999;
+      }
+
+      .rider {
+        margin-top: 3rem;
+        max-width: 600px;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.6;
+        border-top: 1px solid #444;
+        padding-top: 2rem;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        .bio {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>DRC</h1>
+      <div class="lang-toggle">
+        <button onclick="setLanguage('es')">Español</button>
+        <button onclick="setLanguage('en')">English</button>
+      </div>
+    </header>
+
+    <img
+      src="images/presskitphotodrc.jpeg"
+      alt="DRC Photo"
+      class="profile-pic"
+    />
+
+    <div class="bio">
+      <div id="bio-es">
+        <p>DRC es un DJ y productor de techno colombiano.</p>
+        <p>
+          Nacido y criado en Pereira, DRC descubrió su pasión por la música
+          electrónica asistiendo a fiestas de house y techno en su ciudad.
+          Influenciado por artistas como Adriana Lopez, Oscar Mulero, Claudio
+          PRC, Tripeo y otros, comenzó a experimentar con el DJing. Hace un poco
+          más de tres años realizó estudios musicales en un conservatorio de su
+          ciudad, donde adquirió conocimientos de composición y teoría musical,
+          lo que lo introdujo en el mundo de la producción de música
+          electrónica, un mundo que ha explorado desde entonces de forma
+          autodidacta, Además ha participado como vocalista en varias bandas de
+          metal algo que sin duda ha nutrido en gran forma su entendimiento y
+          pasión por la música.
+        </p>
+        <p>
+          Con una carrera de más de 8 años, ha tocado en varios clubes del país,
+          incluyendo el legendario Tunnel Club.
+        </p>
+        <p>
+          Su sonido se caracteriza por incluir tracks con alto contenido rítmico
+          y mental, sus warmups son un viaje impulsado por el tribal, la armonía
+          deep, melodías hipnóticas y paisajes sonoros. En sus sets más
+          orientados a las horas peak, el groove y la energía son los
+          protagonistas.
+        </p>
+        <p>
+          Actualmente está trabajando en su primer EP y su primera pista verá la
+          luz pronto en el sello Biomas de Seeker.
+        </p>
+      </div>
+      <div id="bio-en" class="hidden">
+        <p>DRC is a Colombian techno DJ and producer.</p>
+        <p>
+          Born and raised in Pereira, DRC discovered his passion for electronic
+          music while attending house and techno parties in his city. Influenced
+          by artists like Adriana Lopez, Oscar Mulero, Claudio PRC, Tripeo, and
+          others, he began experimenting with DJing. A little over three years
+          ago, he studied music at a conservatory in his hometown, where he
+          gained knowledge in composition and music theory—an experience that
+          introduced him to the world of electronic music production, which he
+          has since explored self-taught. He has also participated as a vocalist
+          in several metal bands, something that has undoubtedly nurtured his
+          understanding and passion for music.
+        </p>
+        <p>
+          With a career spanning over 8 years, he has played in several clubs
+          across the country, including the legendary Tunnel Club.
+        </p>
+        <p>
+          His sound is characterized by tracks with a strong rhythmic and mental
+          content. His warmups are a journey driven by tribal grooves, deep
+          harmonies, hypnotic melodies, and soundscapes. In his peak-time sets,
+          groove and energy take center stage.
+        </p>
+        <p>
+          He is currently working on his first EP, and his debut track will soon
+          be released on Seeker's label, Biomas.
+        </p>
+      </div>
+    </div>
+
+    <div class="rider">
+      <h2>Rider Técnico</h2>
+      <ul>
+        <li>2 x CDJ-2000 + mixer ó Pioneer XDJ-RX</li>
+        <li>Mixer preferido: Allen & Heath Xone:92</li>
+      </ul>
+    </div>
+
+    <div class="social">
+      <a
+        href="https://www.youtube.com/watch?v=MlPnK8srvIY"
+        target="_blank"
+        title="YouTube"
+        ><i class="fab fa-youtube"></i
+      ></a>
+
+      <a href="https://soundcloud.com/drc_d" target="_blank" title="SoundCloud"
+        ><i class="fab fa-soundcloud"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/_drcdj?igsh=MTQydGJ3cXk1Nmx4aw=="
+        target="_blank"
+        title="Instagram"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </div>
+
+    <script>
+      function setLanguage(lang) {
+        document
+          .getElementById("bio-en")
+          .classList.toggle("hidden", lang !== "en");
+        document
+          .getElementById("bio-es")
+          .classList.toggle("hidden", lang !== "es");
+      }
+      setLanguage("es");
+    </script>
+  </body>
+</html>
